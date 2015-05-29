@@ -15,14 +15,12 @@ To start the release in the foreground:
 $ ./_rel/hello_world_example/bin/hello_world_example console
 ```
 
-Then point your browser at [http://localhost:8080/with_erlydtl](http://localhost:8080/with_erlydtl).
-
 Sync is running and scanning source files.
 
 There are two handlers:
-http://localhost:8080/with_erlydtl
+[http://localhost:8080/with_erlydtl](http://localhost:8080/with_erlydtl)
 and
-http://localhost:8080/without_erlydtl
+[http://localhost:8080/without_erlydtl](http://localhost:8080/without_erlydtl)
 
 When the one with erlydtl is run, the sync crashes the node.
 
