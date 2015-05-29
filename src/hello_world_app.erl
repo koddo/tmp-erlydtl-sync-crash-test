@@ -12,13 +12,14 @@
 
 start(_Type, _Args) ->
 	Dispatch = cowboy_router:compile([
-		{'_', [
-			{"/", toppage_handler, []}
-		]}
-	]),
+                                      {'_', [
+                                             {"/with_erlydtl", with_erlydtl, []},
+                                             {"/without_erlydtl", without_erlydtl, []}
+                                            ]}
+                                     ]),
 	{ok, _} = cowboy:start_http(http, 100, [{port, 8080}], [
-		{env, [{dispatch, Dispatch}]}
-	]),
+                                                            {env, [{dispatch, Dispatch}]}
+                                                           ]),
 	hello_world_sup:start_link().
 
 stop(_State) ->
