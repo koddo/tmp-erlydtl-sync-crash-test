@@ -1,8 +1,6 @@
 Hello world example
 ===================
 
-To try this example, you need GNU `make` and `git` in your PATH.
-
 To build the example, run the following command:
 
 ``` bash
@@ -24,6 +22,7 @@ and
 
 When the one with erlydtl is run, the sync crashes the node.
 
+For this issiue: [https://github.com/rustyio/sync/issues/59](https://github.com/rustyio/sync/issues/59)
 
 The error report
 --------------
