@@ -1,4 +1,6 @@
-Hello world example
+Sync crashes when running a cowboy handler with erlydtl:render.
+
+How to reproduce
 ===================
 
 To build the example, run the following command:
